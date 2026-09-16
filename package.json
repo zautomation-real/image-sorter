@@ -1,16 +1,33 @@
 {
   "name": "image-sorter",
   "version": "1.0.0",
-  "description": "",
+  "description": "A keyboard-first desktop app for quickly sorting photos and videos into folders.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-builder"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "electron": "^44.4.1"
+    "electron": "^44.4.1",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.imagesorter.app",
+    "productName": "Image Sorter",
+    "files": [
+      "main.js",
+      "preload.js",
+      "renderer.js",
+      "index.html",
+      "style.css",
+      "package.json"
+    ],
+    "win": {
+      "target": "portable"
+    }
   }
 }
