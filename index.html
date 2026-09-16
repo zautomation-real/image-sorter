@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Image Sorter
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        Image Sorter
+    </h1>
+
+    <div id="sourceControls">
+        <button id="folderChooser">
+            Choose folder
+        </button>
+        <button id="openFolder">
+            Open folder
+        </button>
+        <span id="sourceFolder">
+            No folder selected
+        </span>
+        <span id="remainingCount">
+        </span>
+    </div>
+
+    <div id="previewWrapper">
+        <span id="zoomIndicator">X1.0</span>
+
+        <div id="previewContainer">
+            <img id="imagePreview" draggable="false">
+            
+            <div id="previewContainer">
+                <img id="imagePreview" draggable="false">
+                <video id="videoPreview" controls></video>
+            </div>
+        </div>
+    </div>
+
+    <div id="imageName">
+    </div>
+
+    <div id="destinations">
+    </div>
+
+    <script src="renderer.js"></script>
+</body>

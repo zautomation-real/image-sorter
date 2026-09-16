@@ -1,0 +1,104 @@
+body {
+    margin: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#imagePreview {
+    display: block;
+    max-width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+}
+
+#sourceControls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#previewWrapper {
+    position: relative;
+    width: min(1100px, 90vw);
+    height: 60vh;
+    margin: 20px auto;
+}
+
+#previewContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    overflow: hidden;
+    background: #f2f2f2;
+}
+
+#zoomIndicator {
+    position: absolute;
+    right: calc(100% + 350px);
+    top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+}
+
+#imagePreview {
+    cursor: grab;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#videoPreview {
+    position: absolute;
+    inset: 0;
+    display: none;
+}
+
+#imagePreview,
+#videoPreview {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+#imagePreview:active {
+    cursor: grabbing;
+}
+
+#imageName {
+    text-align: center;
+    margin: -12px 0 12px;
+}
+
+#destinations {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.destinationRow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 6px;
+}
+
+.destinationRow button:first-child {
+    width: 100%;
+}
+
+.destinationRow {
+    display: grid;
+    grid-template-columns: 1fr 70px;
+    gap: 0;
+}
+
+.destinationRow button:first-child {
+    width: 100%;
+    border-radius: 4px 0 0 4px;
+}
+
+.destinationRow button:last-child {
+    width: 70px;
+    border-left: 0;
+    border-radius: 0 4px 4px 0;
+}
