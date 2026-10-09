@@ -206,6 +206,12 @@ No frameworks. No accounts. No external service required for the core sorting wo
 
 ---
 
+## Maintainer
+
+Maintained by Zinddin B. Louza at [Webs del Camp](https://websdelcamp.cat/es/software-a-medida?utm_source=github&utm_medium=referral&utm_campaign=software_2026_10_09&utm_content=image_sorter_readme), a studio in Tarragona that builds websites, internal software and business automations for small businesses across Spain.
+
+---
+
 ## Feedback & contributions
 
 Found a bug, have a camera format that isn't recognized, or have an idea that would make sorting faster?
